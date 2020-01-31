@@ -74,21 +74,40 @@
 
       <div id="costDisplay">
         <h2>Cost Calculation</h2>
-        <h3>Here is what you ordered:</h3>
+        <h3>Here is what you ordered <span id="orderName"></span>:</h3>
 
-        <h4>Pizza size: </h4>
-        <p><span id="showSize"></span></p>
-
-        <h4>Toppings: </h4>
-        <ul>
-
-        </ul>
-
-        <h4>Pizza Sauce: </h4>
-        <p><span id="showSauce"></span></p>
-
-        <h3>Total Cost: </h3>
-        <p><span id="showTotal"></span></p>
+        <div class="row">
+          <div class="col col-6-md">
+            <h4>Pizza size: </h4>
+            <p><span id="showSize"></span></p>
+  
+            <h4>Toppings: </h4>
+            <ul id="toppingList">
+  
+            </ul>
+  
+            <h4>Pizza Sauce: </h4>
+            <p><span id="showSauce"></span></p>
+  
+            <h3>Total Cost: </h3>
+          </div>
+          
+          <div class="col col-6-md">
+            <h4> </h4>
+            <p><span id="sizeTotal"></span></p>
+  
+            <h4> </h4>
+            <ul id="toppingCosts">
+  
+            </ul>
+            <p><span id="toppingTotal"></span></p>
+  
+            <p><span id="sauceTotal"></span></p>
+  
+            <h3><span id="showTotal"></span></h3>
+          </div>
+        </div>
+        
 
         <button class="btn-primary" id="confirmButton">Confirm Order?</button>
       </div> <!--End of costDisplay-->
