@@ -49,9 +49,15 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
 * _The program creates a pizza order when the user clicks "Order a Pizza"_
   * _Example Input: click "Order a Pizza"_
   * _Example Output: new order for a pizza is given with order screen shown, hide order button and home page info_
+* _The program has a field to put the name of the person ordering the pizza_
+  * _Example Input: "Lelouch"_
+  * _Example Output: store name "Lelouch" into the pizza object_
 * _The program has a drop down select menu with pizza sizes to choose from_
   * _Example Input: pick "Large"_
   * _Example Output: store selection "Large" into pizza object_
+* _The program has checkboxes to select one or more toppings but no checkboxes selected_
+  * _Example Input: check none_
+  * _Example Output: alert that "No toppings selected, will default to only cheese" and continue_
 * _The program has checkboxes to select one or more toppings._
   * _Example Input: check "cheese, pepperoni, mushrooms"_
   * _Example Output: store selections "cheese", "pepperoni", and "mushrooms" into array of chosen toppings_
