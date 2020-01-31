@@ -93,10 +93,11 @@ function displayToppings(){
   $("#toppingList").html(toppingsListItems);
 }
 
-function displayPrices(total){
+function displayPrices(){
   var costIndex = 0;
   var toppingListCosts = "";
   $("#sizeTotal").text("$" + pizza.itemCosts[costIndex]);
+  $("numToppings").append(pizza.toppings.length);
 
   if(pizza.toppings.length>0){
     for(var j=0; j<pizza.toppings.length; j++){
@@ -112,8 +113,22 @@ function displayPrices(total){
   costIndex++;
   $("#sauceTotal").text("$" +pizza.itemCosts[costIndex]);
   costIndex++;
-  $("#showTotal").append("$" +pizza.itemCosts[costIndex]);
+  $("#showTotal").text("$" +pizza.itemCosts[costIndex]);
   
+}
+
+function resetFields(){
+  $("#name").val("");
+  $("#pizzaSize").val("Large");
+  var tempToppings = document.getElementsByName("toppings");
+  for(var i = 0; i < tempToppings.length; i++){
+    if (tempToppings[i].checked === true){
+      tempToppings[i].checked = false;
+    }
+  }
+  document.getElementById("traditional").checked = true;
+  $("#orderName").text("");
+  $("#orderName2").text("");
 }
 
 // User Interface
@@ -125,6 +140,7 @@ $(document).ready(function(){
     $("#confirmDisplay").hide();
 
     pizza = new Pizza();
+    resetFields();
   });
 
   $("#costButton").click(function(){
@@ -144,10 +160,8 @@ $(document).ready(function(){
     pizza.sauce = $("input:radio[name=sauce]:checked").val();
 
     displayOrder();
-    var pizzaTotal = pizza.calculateTotal();
-    displayPrices(pizzaTotal);
-
-    
+    pizza.calculateTotal();
+    displayPrices();
     
   });
 
@@ -156,6 +170,7 @@ $(document).ready(function(){
     $("#orderDisplay").hide();
     $("#costDisplay").hide();
     $("#confirmDisplay").show();
+    $("#orderName2").append(pizza.name);
   });
 
   $("#returnHomeButton").click(function(){
