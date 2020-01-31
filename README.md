@@ -40,7 +40,10 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
 * _The program switches the display to show cost of the order when user clicks "Show cost"_
   * _Example Input: click "Show cost"_
   * _Example Output: hide ordering display, show cost display with selections_
-* _The program switches the display to order confirmed when user clicks "Confirm order"_
+* _The program switches the display back to order screen when user clicks "Edit order"_
+  * _Example Input: click "Edit order"_
+  * _Example Output: show cost display with fields not reset, hide order confirmed display_
+* _The program switches the display to order confirmed screen when user clicks "Confirm order"_
   * _Example Input: click "Confirm order"_
   * _Example Output: hide cost display, show order confirmed display with return to home button_
 * _The program has a return to home button after order confirmed to return back to initial home page_
@@ -51,7 +54,7 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
   * _Example Output: new order for a pizza is given with order screen shown, hide order button and home page info_
 * _The program has a field to put the name of the person ordering the pizza_
   * _Example Input: "Lelouch"_
-  * _Example Output: store name "Lelouch" into the pizza object_
+  * _Example Output: store name "Lelouch" into the pizza object and show during ordering and confirmation screens_
 * _The program has a drop down select menu with pizza sizes to choose from_
   * _Example Input: pick "Large"_
   * _Example Output: store selection "Large" into pizza object_
@@ -69,7 +72,7 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
   * _Example Output: return base cost for "Large" pizzas of $8_
 * _The program uses topping selections stored in a pizza object to calculate the cost of that pizza_
   * _Example Input: click "Show cost" with selections "chicken, spinach, mushrooms"_
-  * _Example Output: return additional cost of $2 per topping, $6 in this case_
+  * _Example Output: return additional cost of $2 per topping except cheese, $6 in this case_
 * _The program uses sauce selection stored in a pizza object to calculate the cost of that pizza_
   * _Example Input: click "Show cost" with selections "Large", "chicken, spinach, mushrooms", "garlic parmesan white sauce"_
   * _Example Output: return additional cost of $1 for white sauce, no additional cost for traditional tomato sauce_

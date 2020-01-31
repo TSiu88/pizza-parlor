@@ -1,9 +1,19 @@
+body{
+  background-color: ;
+}
+
 h1{
   text-align: center;
 }
 
 h2{
   text-align: center;
+}
+
+.jumbotron{
+  background-color: #800000;
+  color: #f2f2f2;
+  border: 4px double #a6a6a6;
 }
 
 #orderDisplay, #costDisplay, #confirmDisplay{

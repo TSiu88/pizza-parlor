@@ -52,12 +52,9 @@ Pizza.prototype.calculateSauceCost = function(){
 
 Pizza.prototype.calculateTotal = function(){
   var total = this.calculateSizeCost();
-  console.log("base total",total);
   total += this.calculateToppingCost();
   total += this.calculateSauceCost();
-  console.log("total",total);
   this.itemCosts.push(total);
-  console.log("total prices",this.itemCosts);
   return total;
 }
 
@@ -153,16 +150,23 @@ $(document).ready(function(){
 
     pizza.name = $("#name").val();
     pizza.size = $("#pizzaSize").val();
-    //console.log(document.forms[0].toppings);
     var checkedToppings = $("input:checkbox[name=\"toppings\"]:checked");
     getPizzaToppings(checkedToppings);
-    console.log(pizza.toppings);
     pizza.sauce = $("input:radio[name=sauce]:checked").val();
 
     displayOrder();
     pizza.calculateTotal();
     displayPrices();
     
+  });
+
+  $("#returnToOrderButton").click(function(){
+    $("#homeDisplay").hide();
+    $("#orderDisplay").show();
+    $("#costDisplay").hide();
+    $("#confirmDisplay").hide();
+    $("#orderName").text("");
+    pizza = new Pizza();
   });
 
   $("#confirmButton").click(function(){

@@ -51,6 +51,7 @@
             <input type="checkbox" name="toppings" value="onions" id="onions">Onions<br>
             <input type="checkbox" name="toppings" value="bellpeppers" id="bellpeppers">Bellpeppers<br>
             <input type="checkbox" name="toppings" value="olives" id="olives">Olives<br>
+            <input type="checkbox" name="toppings" value="artichokes" id="artichokes">Artichokes<br>
 
             <input type="checkbox" name="toppings" value="pineapple" id="pineapple">Pineapple<br>
             <input type="checkbox" name="toppings" value="anchovies" id="anchovies">Anchovies<br>
@@ -101,7 +102,7 @@
             <ul id="toppingCosts">
   
             </ul>
-            <p>Topping Total: <span id="toppingTotal"></span></p>
+            <p><strong>Topping Total</strong>: <span id="toppingTotal"></span></p>
   
             <h4>Sauce Charge:</h4>
             <p><span id="sauceTotal"></span></p>
@@ -109,9 +110,10 @@
             <h3><span id="showTotal"></span></h3>
           </div>
         </div>
-        
-
+      
         <button class="btn-primary" id="confirmButton">Confirm Order?</button>
+        
+        <button class="btn-danger" id="returnToOrderButton">Edit Order</button>
       </div> <!--End of costDisplay-->
 
       <div id="confirmDisplay">
