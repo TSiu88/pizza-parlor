@@ -16,7 +16,7 @@
       <div id="homeDisplay">
         <h3>Like Pizza? So do we! Our new location now has the ability to order your pizza online for pickup!</h3>
         <h3>Interested? Click here to start your order:</h3>
-        <button class="btn-primary" id="orderButton">Order a Pizza</button>
+        <button class="btn btn-primary grow" id="orderButton">Order a Pizza</button>
       </div>
 
       <div id="orderDisplay">
@@ -39,36 +39,40 @@
 
           <div class="form-group">
             <label for="toppings">Toppings:</label><br>
-            <input type="checkbox" name="toppings" value="cheese" id="cheese">Cheese<br>
-            <input type="checkbox" name="toppings" value="pepperoni" id="Pepperoni">Pepperoni<br>
-            <input type="checkbox" name="toppings" value="sausage" id="sausage">Sausage<br>
-            <input type="checkbox" name="toppings" value="chicken" id="chicken">Chicken<br>
-            <input type="checkbox" name="toppings" value="ham" id="ham">Ham<br>
-            <input type="checkbox" name="toppings" value="bacon" id="bacon">Bacon<br>
+            <input type="checkbox" name="toppings" value="Mozzarella Cheese" id="cheese"><label> Mozzarella Cheese</label><br>
+            <input type="checkbox" name="toppings" value="Goat Cheese" id="goatCheese"><label> Goat Cheese</label><br>
+            <input type="checkbox" name="toppings" value="Pepperoni" id="pepperoni"><label> Pepperoni</label><br>
+            <input type="checkbox" name="toppings" value="Sausage" id="sausage"><label> Sausage</label><br>
+            <input type="checkbox" name="toppings" value="Chicken" id="chicken"><label> Chicken</label><br>
+            <input type="checkbox" name="toppings" value="Ham" id="ham"><label> Ham</label><br>
+            <input type="checkbox" name="toppings" value="Bacon" id="bacon"><label> Bacon</label><br>
 
-            <input type="checkbox" name="toppings" value="mushrooms" id="mushrooms">Mushrooms<br>
-            <input type="checkbox" name="toppings" value="spinach" id="spinach">Spinach<br>
-            <input type="checkbox" name="toppings" value="onions" id="onions">Onions<br>
-            <input type="checkbox" name="toppings" value="bellpeppers" id="bellpeppers">Bellpeppers<br>
-            <input type="checkbox" name="toppings" value="olives" id="olives">Olives<br>
-            <input type="checkbox" name="toppings" value="artichokes" id="artichokes">Artichokes<br>
+            <input type="checkbox" name="toppings" value="Mushrooms" id="mushrooms"><label> Mushrooms</label><br>
+            <input type="checkbox" name="toppings" value="Spinach" id="spinach"><label> Spinach</label><br>
+            <input type="checkbox" name="toppings" value="Onions" id="onions"><label> Onions</label><br>
+            <input type="checkbox" name="toppings" value="Tomatoes" id="tomatoes"><label> Tomatoes</label><br>
+            <input type="checkbox" name="toppings" value="Bellpeppers" id="bellpeppers"><label> Bellpeppers</label><br>
+            <input type="checkbox" name="toppings" value="Olives" id="olives"><label> Olives</label><br>
+            <input type="checkbox" name="toppings" value="Artichokes" id="artichokes"><label> Artichokes</label><br>
 
-            <input type="checkbox" name="toppings" value="pineapple" id="pineapple">Pineapple<br>
-            <input type="checkbox" name="toppings" value="anchovies" id="anchovies">Anchovies<br>
+            <input type="checkbox" name="toppings" value="Pineapple" id="pineapple"><label> Pineapple</label><br>
+            <input type="checkbox" name="toppings" value="Anchovies" id="anchovies"><label> Anchovies</label><br>
           </div>
 
           <label for="sauce">Pizza Sauce:</label>
           <div class="radio form-group">
             <label for="traditional">
-              <input type="radio" name="sauce" value="traditional" id="traditional" checked>Traditional Tomato-based Sauce
+              <input type="radio" name="sauce" value="Traditional Tomato-based Sauce" id="traditional" checked>Traditional Tomato-based Sauce
             </label><br>
             <label for="white">
-              <input type="radio" name="sauce" value="white" id="white">Garlic Parmesan White Sauce
+              <input type="radio" name="sauce" value="Garlic Parmesan White Sauce" id="white">Garlic Parmesan White Sauce
+            </label><br>
+            <label for="pesto">
+              <input type="radio" name="sauce" value="Pesto Sauce" id="pesto">Pesto Sauce
             </label>
-            
           </div>
 
-          <button class="btn-primary" id="costButton">Check Cost</button>
+          <button class="btn btn-primary grow" id="costButton">Check Cost</button>
         </form>
 
       </div> <!--End of orderDisplay-->
@@ -111,17 +115,20 @@
           </div>
         </div>
       
-        <button class="btn-primary" id="confirmButton">Confirm Order?</button>
+        <button class="btn btn-primary grow" id="confirmButton">Confirm Order?</button>
         
-        <button class="btn-danger" id="returnToOrderButton">Edit Order</button>
+        <button class="btn btn-danger wiggle" id="returnToOrderButton">Edit Order</button>
       </div> <!--End of costDisplay-->
 
       <div id="confirmDisplay">
         <h2>Thank you for ordering with us <span id="orderName2"></span>!  Your pizza should be ready to pick up at our store in 30 minutes.</h2>
 
-        <button class="btn-primary" id="returnHomeButton">Return to Home</button>
+        <button class="btn btn-primary wiggle" id="returnHomeButton">Return to Home</button>
       </div>
 
+      <div id="image">
+        <img class="wobble" src="img/pizza1.png" alt=" pizza">
+      </div>
     </div> <!--End of container-->
   </body>
 </html>

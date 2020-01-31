@@ -41,12 +41,12 @@ Pizza.prototype.calculateToppingCost = function(){
 }
 
 Pizza.prototype.calculateSauceCost = function(){
-  if (this.sauce === "white"){
-    this.itemCosts.push(1);
-    return 1;
-  }else{
+  if (this.sauce === "traditional"){
     this.itemCosts.push(0);
     return 0;
+  }else{
+    this.itemCosts.push(1);
+    return 1;
   }
 }
 
@@ -67,7 +67,7 @@ function getPizzaToppings(checked){
       pizza.toppings.push(checked[i].value);
     }
   } else {
-    alert("No toppings chosen. Will default to only cheese.");
+    alert("No toppings chosen. Will default to only Mozzarella Cheese.");
   }
 }
 

@@ -1,5 +1,8 @@
 body{
-  background-color: ;
+  display: block;
+  background: url("../img/background.jpg") repeat;
+  background-color: #cccccc;
+  color: #f2f2f2;
 }
 
 h1{
@@ -10,14 +13,38 @@ h2{
   text-align: center;
 }
 
+label{
+  font-size: 18pt;
+}
+
+input[type="checkbox"]{
+  margin-right: 10px;
+}
+
+input[type="checkbox"]+label{
+  font-size: 14pt;
+}
+
 .jumbotron{
   background-color: #800000;
   color: #f2f2f2;
   border: 4px double #a6a6a6;
+  font-family: cursive;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.btn{
+  margin-right: 20px;
 }
 
 #orderDisplay, #costDisplay, #confirmDisplay{
   display: none;
+}
+
+#image{
+  display: block;
+  text-align: center;
 }
 
 #costs{
@@ -31,4 +58,60 @@ h2{
 
 #costList{
   justify-content: left;
+}
+
+.grow:hover{
+  transform: scale(1.2);
+}
+
+@keyframes wiggle{
+  20%{
+    transform: translateX(3px);
+  }
+  40%{
+    transform: translateX(-3px);
+  }
+  60%{
+    transform: translateX(2px);
+  }
+  80%{
+    transform: translateX(-1px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.wiggle:hover{
+  animation: wiggle 1s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes wobble{
+  0% { 
+    transform: translateX(0%); 
+  } 
+  15% { 
+    transform: translateX(-25%) rotate(-10deg); 
+  } 
+  30% { 
+    transform: translateX(20%) rotate(6deg); 
+  } 
+  45% { 
+    transform: translateX(-15%) rotate(-6deg);
+  } 
+  60% { 
+    transform: translateX(10%) rotate(4deg); 
+  }
+  75% { 
+    transform: translateX(-5%) rotate(-2deg); 
+  }
+  100% { 
+    transform: translateX(0%); 
+  } 
+}
+
+.wobble:hover{
+  animation: wobble 3s ease;
+  animation-iteration-count: 1;
 }
