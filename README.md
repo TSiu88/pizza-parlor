@@ -49,7 +49,7 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
 * _The program creates a pizza order when the user clicks "Order a Pizza"_
   * _Example Input: click "Order a Pizza"_
   * _Example Output: new order for a pizza is given with order screen shown, hide order button and home page info_
-* _The program has a drop down menu with pizza sizes to choose from_
+* _The program has a drop down select menu with pizza sizes to choose from_
   * _Example Input: pick "Large"_
   * _Example Output: store selection "Large" into pizza object_
 * _The program has checkboxes to select one or more toppings._
