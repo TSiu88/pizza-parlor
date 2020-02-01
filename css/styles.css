@@ -44,6 +44,12 @@ input[type="checkbox"]+label{
   font-size: 14pt;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
 .jumbotron{
   background-color: #800000;
   color: #f2f2f2;
