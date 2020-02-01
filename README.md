@@ -8,7 +8,7 @@
 
 This site is the Week 4 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  It is a site for a pizza company where the user is able to choose pizza size and toppings and get the cost for ordering.
 
-In this program the user is able to choose a size from a drop down menu, multiple toppings with checkboxes, and the sauce with radio buttons.  The cost is calculated with a base cost based on size (small: $4, medium: $6, large: $8, and xlarge: $10) and then additional items add to that cost.  All toppings other than cheese adds $2 per topping, and using garlic parmesan white sauce adds an extra $1.  The user is also able to go back to edit the order after checking the cost.
+In this program the user is able to choose a size from a drop down menu, multiple toppings with checkboxes, and the sauce with radio buttons.  The cost is calculated with a base cost based on size (small: $4, medium: $6, large: $8, and xlarge: $10) and then additional items add to that cost.  All toppings other than Mozzarella Cheese adds $2 per topping, and using sauces other than Traditional adds an extra $1.  The user is also able to go back to edit the order after checking the cost.
 
 This program was to demonstrate use of constructors and prototypes for objects in JavaScript.
 
@@ -34,7 +34,7 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
 * _Markdown_
 
 ## Notable Features
-<!-- _features that make project stand out_ -->
+_This program has some layered background images as well as animations on an image and buttons, which is something I have not done before._
 
 ## Specifications
 
@@ -87,15 +87,13 @@ _This page may be viewed by cloning the [repository](https://github.com/TSiu88/p
 
 ## Screenshots
 
-<!-- _Here is a snippet of what the input looks like:_
+_Here is a snippet of what the input looks like:_
 
 ![Snippet of input fields](img/snippet1.png)
 
 _Here is a preview of what the output looks like:_
 
-![Snippet of output box](img/snippet2.png) -->
-
-<!-- _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_ -->
+![Snippet of output box](img/snippet2.png)
 
 ## Known Bugs
 
